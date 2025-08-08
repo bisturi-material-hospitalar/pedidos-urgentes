@@ -1,0 +1,188 @@
+/* Container geral */
+.admin-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+/* Blocos */
+.block {
+  background: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Cabeçalho de cada bloco */
+.block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.block-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #111827;
+}
+
+
+/* Botão de Fechar */
+.btn-close {
+  background-color: #ef4444;
+  cursor: pointer;
+  color: #ffff;
+  border: #ef4444 solid;
+  border-radius: .3rem;
+}
+
+.btn-close:hover {
+  opacity: 0.8;
+}
+
+/* Formulário adição de usuário */
+.add-user-form {
+  padding: 1rem 1.5rem;
+  background: #fff;
+}
+
+/* Tabela de usuários */
+.table-wrapper {
+  overflow-x: auto;
+}
+.table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table-wrapper th, .table-wrapper td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+.table-wrapper th {
+  background: #ffffff;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+
+/* Seção de filtros */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  align-items: center;
+}
+.filters select,
+.filters input[type="date"],
+.filters label {
+  font-size: 0.875rem;
+}
+.btn-csv {
+  background: var(--cor-primaria);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color .2s;
+}
+.btn-csv:hover {
+  background: var(--cor-botao-primario-hover);
+}
+
+/* Cards de pedido */
+.pedido-card {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: background .2s;
+}
+.pedido-card:hover {
+  background: #f3f4f6;
+}
+
+/* Sumário e detalhes */
+.pedido-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pedido-details {
+  padding-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+.pedido-details p {
+  margin: 0.25rem 0;
+}
+.actions button {
+  margin-right: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: opacity .2s;
+}
+.actions button:hover {
+  opacity: 0.8;
+}
+
+/* Erros e feedback */
+.error-text {
+  color: #b91c1c;
+  padding: 0.5rem 1.5rem;
+}
+
+.pedido-card.suporte {
+  border-left: 4px solid #f59e0b;
+  background-color: #fffbeb;
+}
+
+/* Tornar as flags mais visíveis */
+.pedido-card.pendente { border-left: 4px solid #ef4444; }
+.pedido-card.impresso { border-left: 4px solid #10b981; }
+
+/* Botão “Reverter” */
+.actions button:first-of-type {
+  background-color: #f59e0b;
+  color: #fff;
+}
+.actions button:first-of-type:hover {
+  opacity: .9;
+}
+
+/* Botão “Exportar” */
+.btn-csv {
+  background-color: #2563eb;
+}
+.btn-csv:hover {
+  background-color: #1d4ed8;
+}
+
+.stats-block {
+  margin-bottom: 2rem;
+}
+.stats-cards {
+  display: flex;
+  gap: 1rem;
+}
+.stat-card {
+  flex: 1;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.stat-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+}
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+}

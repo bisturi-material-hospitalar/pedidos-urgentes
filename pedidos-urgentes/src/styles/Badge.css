@@ -1,0 +1,11 @@
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  font-weight: 500;
+}
+.badge--default { background: #6b7280; color: #fff; }
+.badge--outline { background: #ef4444; color: #fff; }
+.badge--secondary { background: #10b981; color: #fff; }
+.badge--destructive { background: #f59e0b; color: #fff; }

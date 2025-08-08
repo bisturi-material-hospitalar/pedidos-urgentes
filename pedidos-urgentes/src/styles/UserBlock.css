@@ -1,0 +1,173 @@
+/* UserBlock.css */
+
+/* Container */
+.users-block {
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+}
+
+/* Header */
+.block-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.block-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Botões */
+.btn-add,
+.register-button {
+  background-color: #10b981;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: background-color 0.2s, transform 0.1s;
+}
+.btn-add:hover,
+.register-button:hover {
+  background-color: #059669;
+}
+.btn-add:active,
+.register-button:active {
+  transform: scale(0.97);
+}
+
+.btn-close {
+  background-color: #ef4444;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  transition: background-color 0.2s;
+}
+.btn-close:hover {
+  background-color: #dc2626;
+}
+
+/* Formulário de adicionar usuário */
+.add-user-form,
+.register-form {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  max-width: 480px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Inputs do formulário */
+.register-input {
+  width: 93%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.register-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.3);
+}
+
+/* Título interno do form */
+.register-form h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+/* Mensagem de erro */
+.error-text {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+}
+
+/* Tabela */
+.table-wrapper {
+  overflow-x: auto;
+}
+.table-wrapper table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.95rem;
+}
+.table-wrapper thead th {
+  background: #f3f4f6;
+  font-weight: 600;
+  border-bottom: 2px solid #e5e7eb;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+.table-wrapper tbody tr:nth-child(odd) {
+  background: #ffffff;
+}
+.table-wrapper tbody tr:nth-child(even) {
+  background: #f9fafb;
+}
+.table-wrapper td,
+.table-wrapper th {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0.75rem 1rem;
+}
+
+/* Select de permissão */
+.table-wrapper select {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.875rem;
+  transition: border-color 0.2s;
+}
+.table-wrapper select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.3);
+}
+
+/* Botão de exclusão */
+.btn-delete {
+  background: #ef4444;
+  border: none;
+  font-weight: 500;
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.2s;
+}
+.btn-delete:hover {
+  background: #dc2626;
+}
+
+/* Responsividade */
+@media (max-width: 640px) {
+  .block-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .block-header button {
+    margin-top: 0.75rem;
+    width: 100%;
+  }
+  .table-wrapper table {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,109 @@
+/* Reset básico e tipografia */
+body {
+  background-color: #f9fafb;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container principal */
+.register-order-container {
+  max-width: 28rem;       /* mesma lógica de .max-w-md */
+  margin: 2.5rem auto;    /* centraliza e dá margin-top */
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.register-order-container h2 {
+  font-size: 1.25rem;      /* .text-xl */
+  font-weight: 700;        /* .font-bold */
+  margin-bottom: 1rem;     /* .mb-4 */
+  color: #111827;
+}
+
+/* Feedback */
+.feedback {
+  margin-bottom: 1rem;     /* .mb-4 */
+  padding: 0.5rem;         /* .p-2 */
+  border-radius: 0.375rem; /* .rounded */
+}
+.feedback.success {
+  background-color: #dcfce7;  /* .bg-green-100 */
+  color: #15803d;             /* .text-green-700 */
+}
+.feedback.error {
+  background-color: #fee2e2;  /* .bg-red-100 */
+  color: #b91c1c;             /* .text-red-700 */
+}
+
+/* OrderForm */
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;                /* espaçamento vertical entre campos */
+}
+
+.order-form label {
+  font-weight: 500;
+  color: #374151;
+}
+
+.order-form input,
+.order-form textarea {
+  width: 93%;
+  border: 1px solid #d1d5db;  /* cinza claro */
+  border-radius: 0.375rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  color: #1f2937;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.order-form input:focus,
+.order-form textarea:focus {
+  outline: none;
+  border-color: #4f46e5;      /* azul-600 */
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.3);
+}
+
+/* Botão de submit */
+.order-form button {
+  background-color: #10b981;  /* verde-500 */
+  color: #ffffff;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.order-form button:hover {
+  background-color: #059669;  /* verde-600 */
+}
+
+/* Center de acesso negado */
+.access-denied {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #6b7280;             /* cinza-500 */
+}
+
+/* Responsividade básica */
+@media (max-width: 480px) {
+  .register-order-container {
+    padding: 1rem;
+    margin: 1.5rem auto;
+  }
+
+  .order-form button {
+    font-size: 0.875rem;
+    padding: 0.625rem;
+  }
+}

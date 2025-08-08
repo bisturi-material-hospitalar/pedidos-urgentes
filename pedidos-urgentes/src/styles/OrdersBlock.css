@@ -1,0 +1,105 @@
+/* src/styles/OrdersBlock.css */
+
+/* Container de filtros */
+.pedidos-block .filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Select e datepicker */
+.pedidos-block .filters select,
+.pedidos-block .filters input[type="date"] {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  background-color: #ffffff;
+  font-size: 0.925rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.pedidos-block .filters select:focus,
+.pedidos-block .filters input[type="date"]:focus {
+  outline: none;
+  border-color: #03904a;
+  box-shadow: 0 0 0 2px rgba(99, 241, 146, 0.3);
+}
+
+/* Checkbox customizado */
+.pedidos-block .filters label {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.925rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.pedidos-block .filters input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  accent-color: #03904a;
+  cursor: pointer;
+}
+
+/* Botão Exportar (caso use CSVLink dentro de filtros) */
+.pedidos-block .filters .btn-csv {
+  padding: 0.5rem 1rem;
+  background-color: #03904a;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 0.375rem;
+  font-size: 0.925rem;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.pedidos-block .filters .btn-csv:hover {
+  background-color: #03904a;
+  transform: translateY(-1px);
+}
+
+/* Responsivo */
+@media (max-width: 640px) {
+  .pedidos-block .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .pedidos-block .filters select,
+  .pedidos-block .filters input[type="date"],
+  .pedidos-block .filters .btn-csv {
+    width: 100%;
+  }
+}
+
+/* Filtros de Data (painel de pedidos) */
+.pedidos-block .filters.date-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.pedidos-block .filters.date-filters select,
+.pedidos-block .filters.date-filters input[type="date"] {
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  background: #fff;
+  font-size: 0.925rem;
+}
+
+.pedidos-block .filters.date-filters input[type="date"] {
+  width: auto;
+}
+
+/* Responsivo */
+@media (max-width: 640px) {
+  .pedidos-block .filters.date-filters {
+    flex-direction: column;
+  }
+  .pedidos-block .filters.date-filters select,
+  .pedidos-block .filters.date-filters input[type="date"] {
+    width: 100%;
+  }
+}
+

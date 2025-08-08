@@ -1,0 +1,80 @@
+/* Container do formulário */
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Estilo dos inputs de texto e textarea */
+.order-form-input,
+.order-form-textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #1f2937;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-form-input:focus,
+.order-form-textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+}
+
+/* Placeholder com cor mais suave */
+.order-form-input::placeholder,
+.order-form-textarea::placeholder {
+  color: #6b7280;
+}
+
+/* Botão de envio */
+.order-form-button {
+  background-color: #10b981;
+  color: #ffffff;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.order-form-button:hover:not(:disabled) {
+  background-color: #059669;
+}
+
+.order-form-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Mensagens de erro abaixo dos campos */
+.order-form-error {
+  color: #b91c1c;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Mensagem de feedback acima do formulário */
+.form-feedback {
+padding: 0.75rem 1rem;
+border-radius: 0.5rem;
+font-size: 1rem;
+margin-bottom: 1rem;
+}
+
+.form-feedback.success {
+background-color: #dcfce7;
+color: #15803d;
+}
+
+.form-feedback.error {
+background-color: #fee2e2;
+color: #b91c1c;
+}

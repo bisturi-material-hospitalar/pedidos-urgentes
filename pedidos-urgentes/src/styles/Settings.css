@@ -1,0 +1,81 @@
+/* src/styles/Settings.css */
+.settings-container {
+  max-width: 480px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: sans-serif;
+}
+
+.settings-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.settings-form label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--cor-texto);
+}
+
+.settings-form input {
+  width: 93%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.settings-form input:focus {
+  outline: none;
+  border-color: var(--cor-primaria);
+  box-shadow: 0 0 0 3px rgba(224, 0, 16, 0.2);
+}
+
+.btn-save {
+  padding: 0.75rem;
+  background: #15803d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s, transform .1s;
+}
+
+.btn-save:hover {
+  opacity: 0.9;
+}
+
+.btn-save:active {
+  transform: translateY(0);
+}
+
+.settings-feedback {
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-size: .95rem;
+}
+
+.settings-feedback.success {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.settings-feedback.error {
+  background: #fee2e2;
+  color: #b91c1c;
+}
