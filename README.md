@@ -181,6 +181,3 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 
 > **Pedidos Urgentes** – agilidade e transparência na gestão de demandas internas. <br/>
 > Desenvolvido com 💚 por Bisturi Material Hospitalar.
-
-```
-```
