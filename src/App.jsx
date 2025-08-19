@@ -1,5 +1,4 @@
 import { Suspense, lazy } from "react";
-import 'tailwindcss';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useAuth } from "./contexts/AuthContext";
 import { Sidebar } from "./components/Sidebar";

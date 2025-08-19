@@ -1,6 +1,5 @@
 @import './styles/variables.css';
 @import "tailwindcss";
-@layer base, components, utilities;
 
 /* custom global styles */
 html, body, #root {
